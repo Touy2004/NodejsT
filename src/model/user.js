@@ -9,3 +9,4 @@ export const CREATE_TABLE = `create table users(
 export const REGISTER = `insert into users (firstName, lastName, phone, password) value ?`
 export const LOGIN = `select * from users where phone = ?`
 export const SELECT_PHONE = `select * from users where phone = ?`
+export const SELECT_TOKEN = `select * from users where id = ?`

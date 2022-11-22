@@ -34,7 +34,7 @@ export const registers = async(req, res) => {
 
         connected.query(SELECT_PHONE, phone, async(err, result) => {
             if (err) throw err
-            if (result.legth > 0) {
+            if (result.length > 0) {
                 return res.json({ phone: "Phone is already" })
             }
             connected.query(REGISTER, [
@@ -46,7 +46,8 @@ export const registers = async(req, res) => {
                 const token = generateToken(result)
 
                 return res.json({
-                    msg: "Register is complete,"
+                    msg: "Register is complete",
+                    token
                 })
             })
         })
