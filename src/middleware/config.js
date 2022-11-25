@@ -10,3 +10,6 @@ export const SAL_I = process.env.SAL_I
 export const cloud_name = process.env.CLOUDINARY_NAME
 export const api_key = process.env.CLOUDINARY_API_KEY
 export const api_secret_key = process.env.CLOUDINARY_API_SECRET_KEY
+
+//database
+export const database_url = process.env.DATABASE_URL

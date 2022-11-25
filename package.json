@@ -5,6 +5,7 @@
         "start": "nodemon src/index.js"
     },
     "dependencies": {
+        "@planetscale/database": "^1.4.0",
         "bcryptjs": "^2.4.3",
         "body-parser": "^1.20.0",
         "cloudinary": "^1.32.0",
